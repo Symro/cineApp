@@ -4,5 +4,6 @@
     <string name="app_name">CineApp</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_movie">MovieActivity</string>
 
 </resources>
