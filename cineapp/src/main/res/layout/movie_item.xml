@@ -13,7 +13,6 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:maxHeight="470px"
-        android:minHeight="470px"
         android:scaleType="fitXY"
         android:adjustViewBounds="true"
         android:src="@drawable/small_movie_poster" />
