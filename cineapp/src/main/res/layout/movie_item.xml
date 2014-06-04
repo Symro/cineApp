@@ -12,7 +12,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:maxHeight="93dp"
+        android:maxHeight="470px"
+        android:minHeight="470px"
         android:scaleType="fitXY"
         android:adjustViewBounds="true"
         android:src="@drawable/small_movie_poster" />
@@ -22,22 +23,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="5dp"
+        android:layout_marginLeft="70px"
         android:layout_toRightOf="@+id/ivPosterImage"
         android:text="The Dark Knight"
-        android:textSize="12sp" />
+        android:textSize="45px" />
 
-    <TextView
+     <TextView
         android:id="@+id/tvCast"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/ivPosterImage"
         android:layout_alignLeft="@+id/tvCriticsScore"
         android:layout_below="@+id/tvCriticsScore"
-        android:lines="1"
-        android:gravity="bottom"
-        android:text="Christian Bale, Joseph-Gordon Levitt"
-        android:textSize="10sp" />
+        android:lines="3"
+        android:gravity="top"
+        android:text="With: Christian Bale, Joseph-Gordon Levitt"
+        android:textSize="45px" />
 
     <TextView
         android:id="@+id/tvCriticsScore"
@@ -46,6 +47,6 @@
         android:layout_alignLeft="@+id/tvTitle"
         android:layout_below="@+id/tvTitle"
         android:text="93%"
-        android:textSize="10sp" />
+        android:textSize="45px" />
 
 </RelativeLayout>
