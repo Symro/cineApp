@@ -18,11 +18,8 @@ public class MovieDetails extends Activity {
 
     private ImageView ivPosterImage;
     private TextView tvTitle;
-    private TextView tvSynopsis;
     private TextView tvCast;
-    private TextView tvAudienceScore;
-    private TextView tvCriticsScore;
-    private TextView tvCriticsConsensus;
+    private TextView tvYear;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,11 +30,8 @@ public class MovieDetails extends Activity {
         // On récupère les éléments de notre vue
         ivPosterImage = (ImageView) findViewById(R.id.ivPosterImage);
         tvTitle = (TextView) findViewById(R.id.tvTitle);
-        tvSynopsis = (TextView) findViewById(R.id.tvSynopsis);
         tvCast = (TextView) findViewById(R.id.tvCast);
-        tvCriticsConsensus = (TextView) findViewById(R.id.tvCriticsConsensus);
-        tvAudienceScore =  (TextView) findViewById(R.id.tvAudienceScore);
-        tvCriticsScore = (TextView) findViewById(R.id.tvCriticsScore);
+        tvYear = (TextView) findViewById(R.id.tvYear);
 
         // On utilise notre model pour peupler notre vue des bonnes données
         MovieData movie = (MovieData)
@@ -52,11 +46,8 @@ public class MovieDetails extends Activity {
 
         // On envoie les données à la vue
         tvTitle.setText(movie.getTitle());
-        tvCriticsScore.setText(Html.fromHtml("<b>Critics Score:</b> " + movie.getCriticsScore() + "%"));
-        tvAudienceScore.setText(Html.fromHtml("<b>Audience Score:</b> " + movie.getAudienceScore() + "%"));
+        tvYear.setText(Html.fromHtml("" + movie.getYear()));
         tvCast.setText(movie.getCastList());
-        tvSynopsis.setText(Html.fromHtml("<b>Synopsis:</b> " + movie.getSynopsis()));
-        tvCriticsConsensus.setText(Html.fromHtml("<b>Consensus:</b> " + movie.getCriticsConsensus()));
 
         Picasso.with(this).load(movie.getLargePosterUrl()).
                 placeholder(R.drawable.large_movie_poster).

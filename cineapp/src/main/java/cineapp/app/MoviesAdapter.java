@@ -39,13 +39,13 @@ public class MoviesAdapter extends ArrayAdapter<MovieData> {
         }
 
         TextView tvTitle = (TextView) convertView.findViewById(R.id.tvTitle);
-        TextView tvCriticsScore = (TextView) convertView.findViewById(R.id.tvCriticsScore);
+        TextView tvYear = (TextView) convertView.findViewById(R.id.tvYear);
         TextView tvCast = (TextView) convertView.findViewById(R.id.tvCast);
         ImageView ivPosterImage = (ImageView) convertView.findViewById(R.id.ivPosterImage);
 
         // On met la data dans la vue
         tvTitle.setText(movie.getTitle());
-        tvCriticsScore.setText("Score: " + movie.getCriticsScore() + "%");
+        tvYear.setText(""+movie.getYear());
         tvCast.setText("With: " + movie.getCastList());
         Picasso.with(getContext()).load(movie.getPosterUrl()).into(ivPosterImage);
 

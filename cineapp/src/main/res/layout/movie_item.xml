@@ -2,14 +2,14 @@
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="470px"
     android:padding="5dp" >
 
 
     <ImageView
         android:id="@+id/ivPosterImage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="330px"
+        android:layout_height="750px"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:maxHeight="470px"
@@ -25,27 +25,39 @@
         android:layout_marginLeft="70px"
         android:layout_toRightOf="@+id/ivPosterImage"
         android:text="The Dark Knight"
-        android:textSize="45px" />
+        android:textSize="45px"
+        android:textColor="#e7f1f3" />
 
      <TextView
         android:id="@+id/tvCast"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/ivPosterImage"
-        android:layout_alignLeft="@+id/tvCriticsScore"
-        android:layout_below="@+id/tvCriticsScore"
+         android:layout_alignLeft="@+id/tvTitle"
+        android:layout_below="@+id/tvYear"
         android:lines="3"
         android:gravity="top"
         android:text="With: Christian Bale, Joseph-Gordon Levitt"
-        android:textSize="45px" />
+        android:textSize="45px"
+         android:textColor="#9d9d9d" />
 
     <TextView
-        android:id="@+id/tvCriticsScore"
+        android:id="@+id/tvYear"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/tvTitle"
         android:layout_below="@+id/tvTitle"
-        android:text="93%"
-        android:textSize="45px" />
+        android:text="2014"
+        android:textSize="45px"
+        android:textColor="#9d9d9d" />
+
+    <ImageView
+        android:layout_width="90px"
+        android:layout_height="90px"
+        android:id="@+id/imageView"
+        android:src="@drawable/view"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/tvCast"
+        android:layout_alignStart="@+id/tvCast"
+        android:layout_marginBottom="10px" />
 
 </RelativeLayout>

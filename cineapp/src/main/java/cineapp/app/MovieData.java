@@ -40,7 +40,7 @@ public class MovieData implements Serializable {
             b.year = jsonObject.getInt("year");
             b.synopsis = jsonObject.getString("synopsis");
             b.posterUrl = jsonObject.getJSONObject("posters").getString("detailed");
-            b.largePosterUrl = jsonObject.getJSONObject("posters").getString("detailed");
+            b.largePosterUrl = jsonObject.getJSONObject("posters").getString("original");
             b.criticsConsensus = jsonObject.getString("critics_consensus");
             b.audienceScore = jsonObject.getJSONObject("ratings").getInt("audience_score");
             b.criticsScore = jsonObject.getJSONObject("ratings").getInt("critics_score");
