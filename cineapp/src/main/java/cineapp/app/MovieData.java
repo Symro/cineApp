@@ -18,14 +18,10 @@ public class MovieData implements Serializable {
     private static final long serialVersionUID = -8959832007991513854L;
 
     private String largePosterUrl;
-    private String criticsConsensus;
-    private int audienceScore;
 
     private String title;
     private int year;
-    private String synopsis;
     private String posterUrl;
-    private int criticsScore;
     private ArrayList<String> castList;
 
     // Désérialisation du JSON
@@ -38,12 +34,8 @@ public class MovieData implements Serializable {
             // Json -> objet
             b.title = jsonObject.getString("title");
             b.year = jsonObject.getInt("year");
-            b.synopsis = jsonObject.getString("synopsis");
             b.posterUrl = jsonObject.getJSONObject("posters").getString("detailed");
             b.largePosterUrl = jsonObject.getJSONObject("posters").getString("original");
-            b.criticsConsensus = jsonObject.getString("critics_consensus");
-            b.audienceScore = jsonObject.getJSONObject("ratings").getInt("audience_score");
-            b.criticsScore = jsonObject.getJSONObject("ratings").getInt("critics_score");
 
             // Création du tabeleau
             b.castList = new ArrayList<String>();
@@ -110,28 +102,12 @@ public class MovieData implements Serializable {
         return year;
     }
 
-    public String getSynopsis() {
-        return synopsis;
-    }
-
     public String getPosterUrl() {
         return posterUrl;
     }
 
     public String getLargePosterUrl() {
         return largePosterUrl;
-    }
-
-    public String getCriticsConsensus() {
-        return criticsConsensus;
-    }
-
-    public int getAudienceScore() {
-        return audienceScore;
-    }
-
-    public int getCriticsScore() {
-        return criticsScore;
     }
 
     public String getCastList() {

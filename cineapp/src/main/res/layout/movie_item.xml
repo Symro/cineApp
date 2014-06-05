@@ -32,23 +32,26 @@
         android:id="@+id/tvCast"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-         android:layout_alignLeft="@+id/tvTitle"
-        android:layout_below="@+id/tvYear"
-        android:lines="3"
+         android:lines="3"
         android:gravity="top"
         android:text="With: Christian Bale, Joseph-Gordon Levitt"
         android:textSize="45px"
-         android:textColor="#9d9d9d" />
+         android:textColor="#9d9d9d"
+         android:layout_above="@+id/imageView"
+         android:layout_alignLeft="@+id/tvTitle"
+         android:layout_alignStart="@+id/tvTitle" />
 
     <TextView
         android:id="@+id/tvYear"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/tvTitle"
-        android:layout_below="@+id/tvTitle"
         android:text="2014"
         android:textSize="45px"
-        android:textColor="#9d9d9d" />
+        android:textColor="#9d9d9d"
+        android:layout_below="@+id/frameLayout"
+        android:layout_alignLeft="@+id/tvCast"
+        android:layout_alignStart="@+id/tvCast"
+        android:layout_marginTop="30px" />
 
     <ImageView
         android:layout_width="90px"
@@ -59,5 +62,23 @@
         android:layout_alignLeft="@+id/tvCast"
         android:layout_alignStart="@+id/tvCast"
         android:layout_marginBottom="10px" />
+
+    <FrameLayout
+        android:layout_width="70px"
+        android:layout_height="2px"
+        android:background="#a1a1a1"
+        android:layout_below="@+id/tvTitle"
+        android:layout_alignLeft="@+id/tvYear"
+        android:layout_alignStart="@+id/tvYear"
+        android:layout_marginTop="30px"
+        android:id="@+id/frameLayout"></FrameLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="37px"
+        android:id="@+id/imageView2"
+        android:src="@drawable/fleche"
+        android:layout_marginLeft="1010px"
+        android:layout_marginTop="245px" />
 
 </RelativeLayout>

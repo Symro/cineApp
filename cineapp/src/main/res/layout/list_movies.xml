@@ -2,13 +2,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
     android:background="@drawable/background_image"
     tools:context="cineapp.app.MovieActivity">
 
+    <ImageView
+        android:layout_width="110px"
+        android:layout_height="wrap_content"
+        android:src="@drawable/movie_icon"
+        android:layout_marginTop="45px"
+        android:layout_marginLeft="70px" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Movie list"
+        android:id="@+id/tvBarTitle"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="200px"
+        android:textColor="#fff"
+        android:layout_marginTop="75px"
+        />
+
+    <FrameLayout
+        android:layout_width="1080px"
+        android:layout_height="200px"
+        android:background="#000"
+        android:alpha="0.3">
+    </FrameLayout>
 
     <ListView
         android:id="@+id/lvMovies"
@@ -17,7 +37,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true" >
+        android:layout_marginTop="200px">
     </ListView>
 
 </RelativeLayout>
