@@ -1,6 +1,7 @@
 package cineapp.app;
 
 import android.app.Activity;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.Menu;
@@ -67,6 +68,27 @@ public class MovieDetails extends Activity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+
+
+        // Chemin pour acceder aux polices
+        String fontPathBold = "fonts/Montserrat-Bold.ttf";
+        String fontPathRegular = "fonts/Montserrat-Regular.ttf";
+
+        // on récupère nos text view
+        TextView tvBarTitle = (TextView) findViewById(R.id.tvBarTitle);
+        TextView tvCast = (TextView) findViewById(R.id.tvCast);
+        TextView tvYear = (TextView) findViewById(R.id.tvYear);
+        TextView tvTitle = (TextView) findViewById(R.id.tvTitle);
+
+        // on charge les polices
+        Typeface montserratBold = Typeface.createFromAsset(getAssets(), fontPathBold);
+        Typeface monserratRegular = Typeface.createFromAsset(getAssets(), fontPathRegular);
+
+        // On applique les fonts à la vue
+        tvBarTitle.setTypeface(montserratBold);
+        tvCast.setTypeface(monserratRegular);
+        tvYear.setTypeface(monserratRegular);
+        tvTitle.setTypeface(monserratRegular);
 
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long

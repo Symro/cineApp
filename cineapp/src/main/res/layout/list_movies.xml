@@ -23,13 +23,6 @@
         android:layout_marginTop="75px"
         />
 
-    <FrameLayout
-        android:layout_width="1080px"
-        android:layout_height="200px"
-        android:background="#000"
-        android:alpha="0.3">
-    </FrameLayout>
-
     <ListView
         android:id="@+id/lvMovies"
         android:layout_width="match_parent"
@@ -39,5 +32,12 @@
         android:layout_alignParentRight="true"
         android:layout_marginTop="200px">
     </ListView>
+
+    <FrameLayout
+        android:layout_width="1080px"
+        android:layout_height="200px"
+        android:background="#000"
+        android:alpha="0.3">
+    </FrameLayout>
 
 </RelativeLayout>

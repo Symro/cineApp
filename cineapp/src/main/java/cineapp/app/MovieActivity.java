@@ -2,12 +2,14 @@ package cineapp.app;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.loopj.android.http.JsonHttpResponseHandler;
 
@@ -35,6 +37,24 @@ public class MovieActivity extends Activity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.list_movies);
+
+        // Chemin pour acceder aux polices
+        String fontPathBold = "fonts/Montserrat-Bold.ttf";
+        String fontPathRegular = "fonts/Montserrat-Regular.ttf";
+
+        // on récupère nos text view
+        TextView tvBarTitle = (TextView) findViewById(R.id.tvBarTitle);
+        TextView tvYear = (TextView) findViewById(R.id.tvYear);
+        TextView tvCast = (TextView) findViewById(R.id.tvCast);
+
+        // on charge les polices
+        Typeface montserratBold = Typeface.createFromAsset(getAssets(), fontPathBold);
+        Typeface monserratRegular = Typeface.createFromAsset(getAssets(), fontPathRegular);
+
+        // On applique les fonts à la vue
+        tvBarTitle.setTypeface(montserratBold);
+        //tvYear.setTypeface(monserratRegular);
+        //tvCast.setTypeface(monserratRegular);
 
         lvMovies = (ListView) findViewById(R.id.lvMovies);
         ArrayList<MovieData> aMovies = new ArrayList<MovieData>();
