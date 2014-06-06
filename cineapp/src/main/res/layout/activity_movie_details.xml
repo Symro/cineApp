@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cineapp.app.MovieDetails">
+
+    <ImageView
+        android:id="@+id/ivPosterImage"
+        android:layout_width="1080px"
+        android:layout_height="1920px"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="false"
+        android:src="@drawable/large_movie_poster"
+        android:focusableInTouchMode="true" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="200px"
+        android:background="#000"
+        android:alpha="0.3"></FrameLayout>
+
+    <ImageView
+        android:layout_width="30px"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:src="@drawable/flecheb"
+        android:layout_marginTop="65px"
+        android:layout_marginLeft="70px"/>
+
+    <ImageView
+        android:layout_width="110px"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:src="@drawable/movie_icon"
+        android:layout_marginTop="45px"
+        android:layout_marginLeft="150px"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Movie details"
+        android:id="@+id/tvBarTitle"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="280px"
+        android:textColor="#fff"
+        android:layout_marginTop="75px"
+        />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#000"
+        android:alpha="0.75"
+        android:layout_marginTop="900px">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The Dark Knight"
+            android:textSize="60px"
+            android:layout_gravity="center_horizontal|top"
+            android:textColor="#e7f1f3"
+            android:textAlignment="center"
+            android:layout_marginTop="80px" />
+
+        <TextView
+            android:id="@+id/tvCast"
+            android:layout_width="660px"
+            android:layout_height="57dp"
+            android:gravity="top"
+            android:text="Christian Bale, Joseph-Gordon Levitt"
+            android:textSize="45px"
+            android:layout_gravity="center"
+            android:textColor="#9d9d9d"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tvYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200px"
+            android:text="2014"
+            android:textSize="50px"
+            android:layout_gravity="center_horizontal|top"
+            android:textColor="#e7f1f3" />
+
+        <ImageView
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:id="@+id/imageView"
+            android:src="@drawable/view"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="200px" />
+
+        <TextView
+            android:id="@+id/tvBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book it"
+            android:textSize="50px"
+            android:layout_gravity="center_horizontal|bottom"
+            android:textColor="#e7f1f3"
+            android:layout_marginBottom="80px" />
+
+        <FrameLayout
+            android:layout_width="70px"
+            android:layout_height="2px"
+            android:layout_marginTop="175px"
+            android:layout_gravity="center_horizontal|top"
+            android:background="#a1a1a1"></FrameLayout>
+
+        <FrameLayout
+            android:layout_width="70px"
+            android:layout_height="2px"
+            android:layout_marginTop="280px"
+            android:layout_gravity="center_horizontal|top"
+            android:background="#a1a1a1"
+            android:id="@+id/frameLayout" />
+    </FrameLayout>
+
+</RelativeLayout>
