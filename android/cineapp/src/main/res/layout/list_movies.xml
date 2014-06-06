@@ -21,7 +21,7 @@
         android:layout_marginLeft="200px"
         android:textColor="#fff"
         android:layout_marginTop="75px"
-        />
+        android:capitalize="characters" />
 
     <ListView
         android:id="@+id/lvMovies"

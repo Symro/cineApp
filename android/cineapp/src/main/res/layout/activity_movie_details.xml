@@ -17,12 +17,13 @@
         android:layout_width="fill_parent"
         android:layout_height="200px"
         android:background="#000"
-        android:alpha="0.3"></FrameLayout>
+        android:alpha="0.3"
+        android:id="@+id/frameLayout2"></FrameLayout>
 
     <ImageView
         android:layout_width="30px"
         android:layout_height="wrap_content"
-        android:id="@+id/imageView2"
+        android:id="@+id/imageView3"
         android:src="@drawable/flecheb"
         android:layout_marginTop="65px"
         android:layout_marginLeft="70px"/>
@@ -53,6 +54,24 @@
         android:alpha="0.75"
         android:layout_marginTop="900px">
 
+        <FrameLayout
+            android:layout_width="70px"
+            android:layout_height="2px"
+            android:layout_gravity="center_horizontal|top"
+            android:background="#a1a1a1"
+            android:id="@+id/frameLayout"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="200px" />
+
+        <FrameLayout
+            android:layout_width="70px"
+            android:layout_height="2px"
+            android:layout_gravity="center"
+            android:background="#a1a1a1"
+            android:layout_marginTop="-50px"></FrameLayout>
+    </FrameLayout>
+
         <TextView
             android:id="@+id/tvTitle"
             android:layout_width="wrap_content"
@@ -62,7 +81,8 @@
             android:layout_gravity="center_horizontal|top"
             android:textColor="#e7f1f3"
             android:textAlignment="center"
-            android:layout_marginTop="80px" />
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1000px" />
 
         <TextView
             android:id="@+id/tvCast"
@@ -72,18 +92,21 @@
             android:text="Christian Bale, Joseph-Gordon Levitt"
             android:textSize="45px"
             android:layout_gravity="center"
+            android:textAlignment="center"
             android:textColor="#9d9d9d"
-            android:textAlignment="center" />
+            android:layout_marginTop="1300px"
+            android:layout_centerHorizontal="true" />
 
         <TextView
             android:id="@+id/tvYear"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="200px"
             android:text="2014"
             android:textSize="50px"
             android:layout_gravity="center_horizontal|top"
-            android:textColor="#e7f1f3" />
+            android:textColor="#e7f1f3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1150px" />
 
         <ImageView
             android:layout_width="100px"
@@ -91,7 +114,8 @@
             android:id="@+id/imageView"
             android:src="@drawable/view"
             android:layout_gravity="center_horizontal|bottom"
-            android:layout_marginBottom="200px" />
+            android:layout_marginTop="1500px"
+            android:layout_centerHorizontal="true" />
 
         <TextView
             android:id="@+id/tvBook"
@@ -101,22 +125,7 @@
             android:textSize="50px"
             android:layout_gravity="center_horizontal|bottom"
             android:textColor="#e7f1f3"
-            android:layout_marginBottom="80px" />
-
-        <FrameLayout
-            android:layout_width="70px"
-            android:layout_height="2px"
-            android:layout_marginTop="175px"
-            android:layout_gravity="center_horizontal|top"
-            android:background="#a1a1a1"></FrameLayout>
-
-        <FrameLayout
-            android:layout_width="70px"
-            android:layout_height="2px"
-            android:layout_marginTop="280px"
-            android:layout_gravity="center_horizontal|top"
-            android:background="#a1a1a1"
-            android:id="@+id/frameLayout" />
-    </FrameLayout>
+            android:layout_marginTop="1630px"
+            android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
