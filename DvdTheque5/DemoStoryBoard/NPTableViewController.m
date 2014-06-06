@@ -2,8 +2,8 @@
 //  NPTableViewController.m
 //  DemoStoryBoard
 //
-//  Created by Fabrice Dewasmes on 5/23/14.
-//  Copyright (c) 2014 NEOPIXL. All rights reserved.
+//  Created by Alexandre Guerard on 28/05/2014.
+//  Copyright (c) 2014 Alex. All rights reserved.
 //
 
 #import "NPTableViewController.h"
@@ -41,34 +41,36 @@
     [self setUsers:[[NSMutableArray alloc] initWithCapacity:3]];
     
 
+    
+
     NPUser *a = [[NPUser alloc] init];
     [a setNom:@"HER"];
     [a setPrenom:@"Spike Jonze"];
-    [a setYear:@"2013"];
+    [a setAnnee:@"2013"];
     [a setActor:@"Spike Jonze, Scarlett Johansson, Amy Adams"];
     [a setCover:[UIImage imageNamed:@"her.jpg"]];
     NPUser *b = [[NPUser alloc] init];
     [b setNom:@"PULP FICTION"];
     [b setPrenom:@"Quentin Tarantino"];
-    [b setYear:@"1994"];
+    [b setAnnee:@"1994"];
     [b setActor:@"Uma Thurman, Samuel L.Jackson, John Travolta, Bruce Willis"];
     [b setCover:[UIImage imageNamed:@"pulpfiction.jpg"]];
     NPUser *c = [[NPUser alloc] init];
     [c setNom:@"DIKKENEK"];
     [c setPrenom:@"Olivier Van Hoostadt"];
-    [c setYear:@"2006"];
+    [c setAnnee:@"2006"];
     [c setActor:@"François Damiens, Mélanie Laurent, Marion Cotillard"];
     [c setCover:[UIImage imageNamed:@"dikkenek.jpg"]];
     NPUser *d = [[NPUser alloc] init];
     [d setNom:@"SNATCH"];
     [d setPrenom:@"Guy Ritchie"];
-    [d setYear:@"2000"];
+    [d setAnnee:@"2000"];
     [d setActor:@"Brad Pitt, Jason Statham, Vinnies Jones, Dennis Farina"];
     [d setCover:[UIImage imageNamed:@"snatch.jpeg"]];
     NPUser *e = [[NPUser alloc] init];
     [e setNom:@"THE LORD OF THE RINGS: THE RETURN OF THE KING"];
     [e setPrenom:@"Peter Jackson"];
-    [e setYear:@"2003"];
+    [e setAnnee:@"2003"];
     [e setActor:@"Ian McKelle, Elijah Wood, Viggo Mortensen, Sean Astin"];
     [e setCover:[UIImage imageNamed:@"LeSeigneurAnneaux.jpg"]];
     [[self users] addObject:a];
@@ -113,18 +115,21 @@
     
     UILabel *label = (UILabel *)[cell viewWithTag:100];
     [label setText:[[[self users] objectAtIndex:indexPath.row] nom]];
+    label.font = [UIFont fontWithName:@"Montserrat-Bold" size:18];
     
     UILabel *label2 = (UILabel *)[cell viewWithTag:103];
     [label2 setText:[[[self users] objectAtIndex:indexPath.row] prenom]];
+    label2.font = [UIFont fontWithName:@"Montserrat" size:18];
     
+    UILabel *annee = (UILabel *)[cell viewWithTag:104];
+    [annee setText:[[[self users] objectAtIndex:indexPath.row] annee]];
+    annee.font = [UIFont fontWithName:@"Montserrat" size:18];
 
-    
-
-    
-    
     
     UIImageView *imageView = (UIImageView *)[cell viewWithTag:101];
     [imageView setImage:[[[self users] objectAtIndex:indexPath.row] cover]];
+    
+ 
 
     return cell;
 }

@@ -22,9 +22,9 @@
 		6B7BAFF2192F7A4200DAF5EE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6B7BAFF0192F7A4200DAF5EE /* InfoPlist.strings */; };
 		6B7BAFF4192F7A4200DAF5EE /* DemoStoryBoardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B7BAFF3192F7A4200DAF5EE /* DemoStoryBoardTests.m */; };
 		6B7BAFFF192F806A00DAF5EE /* NPTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B7BAFFE192F806A00DAF5EE /* NPTableViewController.m */; };
-		6B7BB004192F859500DAF5EE /* IMG_1881.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 6B7BB003192F859500DAF5EE /* IMG_1881.JPG */; };
 		6B7BB007192F893E00DAF5EE /* NPUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B7BB006192F893E00DAF5EE /* NPUser.m */; };
 		6B7BB00A192F8B5D00DAF5EE /* NPSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B7BB009192F8B5D00DAF5EE /* NPSecondViewController.m */; };
+		FA087B7E1941322500DD2935 /* splashScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = FA087B7D1941322500DD2935 /* splashScreen.png */; };
 		FA921977193E2D9B00BA9F62 /* pulpfiction.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA921976193E2D9B00BA9F62 /* pulpfiction.jpg */; };
 		FA92197B193E333E00BA9F62 /* dikkenek.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA921978193E333E00BA9F62 /* dikkenek.jpg */; };
 		FA92197C193E333E00BA9F62 /* her.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA921979193E333E00BA9F62 /* her.jpg */; };
@@ -71,11 +71,11 @@
 		6B7BAFF3192F7A4200DAF5EE /* DemoStoryBoardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoStoryBoardTests.m; sourceTree = "<group>"; };
 		6B7BAFFD192F806A00DAF5EE /* NPTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NPTableViewController.h; sourceTree = "<group>"; };
 		6B7BAFFE192F806A00DAF5EE /* NPTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NPTableViewController.m; sourceTree = "<group>"; };
-		6B7BB003192F859500DAF5EE /* IMG_1881.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1881.JPG; sourceTree = "<group>"; };
 		6B7BB005192F893E00DAF5EE /* NPUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NPUser.h; sourceTree = "<group>"; };
 		6B7BB006192F893E00DAF5EE /* NPUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NPUser.m; sourceTree = "<group>"; };
 		6B7BB008192F8B5D00DAF5EE /* NPSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NPSecondViewController.h; sourceTree = "<group>"; };
 		6B7BB009192F8B5D00DAF5EE /* NPSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NPSecondViewController.m; sourceTree = "<group>"; };
+		FA087B7D1941322500DD2935 /* splashScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splashScreen.png; sourceTree = "<group>"; };
 		FA921976193E2D9B00BA9F62 /* pulpfiction.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pulpfiction.jpg; sourceTree = "<group>"; };
 		FA921978193E333E00BA9F62 /* dikkenek.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dikkenek.jpg; sourceTree = "<group>"; };
 		FA921979193E333E00BA9F62 /* her.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = her.jpg; sourceTree = "<group>"; };
@@ -148,9 +148,8 @@
 		6B7BAFCE192F7A4200DAF5EE /* DemoStoryBoard */ = {
 			isa = PBXGroup;
 			children = (
-				6B7BB003192F859500DAF5EE /* IMG_1881.JPG */,
-				FACB2705193FB9130030C4DD /* ressource */,
 				FA921978193E333E00BA9F62 /* dikkenek.jpg */,
+				FA087B7D1941322500DD2935 /* splashScreen.png */,
 				FA921979193E333E00BA9F62 /* her.jpg */,
 				FA92197E193E38EB00BA9F62 /* LeSeigneurAnneaux.jpg */,
 				FACB26FD193E7BEC0030C4DD /* viewOff.png */,
@@ -159,12 +158,12 @@
 				FACB26FB193E79A00030C4DD /* view.png */,
 				FA92197A193E333E00BA9F62 /* snatch.jpeg */,
 				FA921976193E2D9B00BA9F62 /* pulpfiction.jpg */,
+				FACB2705193FB9130030C4DD /* ressource */,
 				6B7BAFD7192F7A4200DAF5EE /* NPAppDelegate.h */,
 				6B7BAFD8192F7A4200DAF5EE /* NPAppDelegate.m */,
 				6B7BAFDA192F7A4200DAF5EE /* Main.storyboard */,
 				6B7BAFDD192F7A4200DAF5EE /* NPViewController.h */,
 				6B7BAFDE192F7A4200DAF5EE /* NPViewController.m */,
-				6B7BAFE0192F7A4200DAF5EE /* Images.xcassets */,
 				6B7BAFCF192F7A4200DAF5EE /* Supporting Files */,
 				6B7BAFFD192F806A00DAF5EE /* NPTableViewController.h */,
 				6B7BAFFE192F806A00DAF5EE /* NPTableViewController.m */,
@@ -179,6 +178,7 @@
 		6B7BAFCF192F7A4200DAF5EE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6B7BAFE0192F7A4200DAF5EE /* Images.xcassets */,
 				6B7BAFD0192F7A4200DAF5EE /* DemoStoryBoard-Info.plist */,
 				6B7BAFD1192F7A4200DAF5EE /* InfoPlist.strings */,
 				6B7BAFD4192F7A4200DAF5EE /* main.m */,
@@ -296,6 +296,7 @@
 				FACB2700193E828E0030C4DD /* backgroundTabView.png in Resources */,
 				FA92197D193E333E00BA9F62 /* snatch.jpeg in Resources */,
 				6B7BAFE1192F7A4200DAF5EE /* Images.xcassets in Resources */,
+				FA087B7E1941322500DD2935 /* splashScreen.png in Resources */,
 				FACB2709193FB9130030C4DD /* Montserrat-Regular.ttf in Resources */,
 				FA92197B193E333E00BA9F62 /* dikkenek.jpg in Resources */,
 				FACB2704193FB4520030C4DD /* backgroundList.png in Resources */,
@@ -304,7 +305,6 @@
 				FA92197C193E333E00BA9F62 /* her.jpg in Resources */,
 				FA921977193E2D9B00BA9F62 /* pulpfiction.jpg in Resources */,
 				FACB26FC193E79A00030C4DD /* view.png in Resources */,
-				6B7BB004192F859500DAF5EE /* IMG_1881.JPG in Resources */,
 				6B7BAFD3192F7A4200DAF5EE /* InfoPlist.strings in Resources */,
 				6B7BAFDC192F7A4200DAF5EE /* Main.storyboard in Resources */,
 				FACB26FE193E7BEC0030C4DD /* viewOff.png in Resources */,

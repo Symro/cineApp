@@ -2,8 +2,8 @@
 //  NPSecondViewController.m
 //  DemoStoryBoard
 //
-//  Created by Fabrice Dewasmes on 5/23/14.
-//  Copyright (c) 2014 NEOPIXL. All rights reserved.
+//  Created by Alexandre Guerard on 28/05/2014.
+//  Copyright (c) 2014 Alex. All rights reserved.
 //
 
 #import "NPSecondViewController.h"
@@ -14,10 +14,19 @@
 @property (weak, nonatomic) IBOutlet UILabel *actor;
 @property (weak, nonatomic) IBOutlet UIImageView *cover;
 @property (weak, nonatomic) IBOutlet UILabel *year;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+
+- (IBAction)tapButton:(id)sender;
+- (IBAction)buttonTap:(id)sender;
+- (IBAction)imageTap:(id)sender;
+
+
 
 @end
 
 @implementation NPSecondViewController
+@synthesize buttonToggled = _buttonToggled;
+//@synthesize imageToggled = _imageToggled;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -35,9 +44,17 @@
     
     [[self nameLabel] setText:[[self user] nom]];
     [[self prenom] setText:[[self user] prenom]];
-    [[self year] setText:[[self user] year]];
+    [[self year] setText:[[self user] annee]];
     [[self actor] setText:[[self user] actor]];
     [[self cover] setImage:[[self user] cover]];
+    
+    
+    [[self scrollView] setContentSize:CGSizeMake(self.view.frame.size.width, 450)];
+    
+    
+    
+
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -57,4 +74,30 @@
 }
 */
 
+
+
+-(IBAction)toggleButton:(id)sender {
+    if (!_buttonToggled) {
+        [sender setTitle:@"BOOK IT" forState:UIControlStateNormal];
+        _buttonToggled = YES;
+    }
+    else {
+        [sender setTitle:@"NOT AVAILABLE" forState:UIControlStateNormal];
+        _buttonToggled = NO;
+    }
+}
+- (IBAction)buttonClicked:(id)sender {
+
+}
+- (IBAction)imageTap:(id)sender {
+//    if (!_imageToggled) {
+//        //        [[self user] nom]] = true;
+//        [sender setImage:[UIImage imageNamed:@"view.jpg"]];
+//        _imageToggled = YES;
+//    }
+//    else {
+//        [sender setImage:[UIImage imageNamed:@"viewOff.jpg"]];
+//        _imageToggled = NO;
+//    }
+}
 @end
